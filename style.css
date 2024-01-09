@@ -12,6 +12,7 @@ h1 {
     color: #2c53af;
 }
 
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;
@@ -160,10 +161,19 @@ h1 {
     border-radius: 1rem;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 360px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
+
+    li {
+        max-width: 80%;
+    }
+
+    .content {
+        width: 360px;
+    }
+    
 }
 
 @media screen and (min-width: 576px) {
@@ -176,4 +186,5 @@ h1 {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    
 }
